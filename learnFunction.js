@@ -16,5 +16,8 @@ function checkAge1(age) {
 
 // checkAge1(11);
 // checkAge2(11);
-checkAge3(11);
+// checkAge3(11);
 
+function getMin(a,b) {
+    return a > b ? b : a
+}
