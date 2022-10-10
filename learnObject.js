@@ -89,3 +89,24 @@ function makeUser(name, age) {
         ///...등등 
     };
 }
+
+// 예약어를 키로 사용해도 괜찮다.
+let obj = {
+    for: 1,
+    let: 2,
+    return: 3,
+};
+
+alert( obj.for + obj.let + obj.return );  // 6
+
+let obj = {
+    0: "test" // "0": "test"와 동일합니다.
+  };
+  
+  // 숫자 0은 문자열 "0"으로 변환되기 때문에 두 얼럿 창은 같은 프로퍼티에 접근합니다,
+  alert( obj["0"] ); // test
+  alert( obj[0] ); // test (동일한 프로퍼티)
+
+  let obj = {};
+obj.__proto__ = 5; // 숫자를 할당합니다.
+alert(obj.__proto__); // [object Object] - 숫자를 할당했지만 값은 객체가 되었습니다
