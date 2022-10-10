@@ -142,3 +142,30 @@ let obj = {
     // 키에 해당하는 값
     alert( user[key] ); // John, 30, true
   }
+
+  let user = {};
+  user.name: "John",
+  user.surname: "Smith",
+  user.name = "Pete";
+  delete user.name;
+
+  function isEmpty(object){
+    for(let key in object){
+        return false;
+    }
+    return true;
+  };
+
+  let schedule = {};
+
+  alert(isEmpty(schedule)); //true
+
+  schedule["8:30"] = "get up";
+
+  alert(isEmpty(schedule)); //false
+
+  let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+  }
