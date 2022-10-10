@@ -110,3 +110,24 @@ let obj = {
   let obj = {};
 obj.__proto__ = 5; // 숫자를 할당합니다.
 alert(obj.__proto__); // [object Object] - 숫자를 할당했지만 값은 객체가 되었습니다
+
+let user = {};
+
+alert(user.noSuchProperty === undefined); //true는 '프로퍼티가 존재하지 않음'을 의미합니다.
+
+"key" in Object
+
+let user = {name: "John", age: 30};
+
+alert("age" in user); // user.age가 존재하므로 true가 출력됩니다.
+alert("blabla" in user); // user.blabla는 존재하지 않기 존재하지 않기 때문에 false가 출력됩니다.
+
+let obj = {
+    test: undefined
+  };
+  
+  alert( obj.test ); // 값이 `undefined`이므로, 얼럿 창엔 undefined가 출력됩니다. 그런데 프로퍼티 test는 존재합니다.
+  
+  alert( "test" in obj ); // `in`을 사용하면 프로퍼티 유무를 제대로 확인할 수 있습니다(true가 출력됨).
+
+  
