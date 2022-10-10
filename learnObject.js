@@ -163,9 +163,15 @@ let obj = {
   schedule["8:30"] = "get up";
 
   alert(isEmpty(schedule)); //false
-
+  
   let salaries = {
     John: 100,
     Ann: 160,
     Pete: 130
   }
+    let total = 0;
+  for(let key in salaries){
+    total += salaries.key;
+  }
+
+  alert(sum);
