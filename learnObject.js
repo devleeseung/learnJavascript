@@ -52,3 +52,21 @@ let key = "name";
 alert(user.key) // undefined
 
 
+let fruit = prompt("어떤 과일을 구매하시겠습니까?", "apple");
+
+let bag = {
+  [fruit]: 5, // 변수 fruit에서 프로퍼티 이름을 동적으로 받아 옵니다.
+};
+
+alert( bag.apple ); // fruit에 "apple"이 할당되었다면, 5가 출력
+
+let fruit = prompt("어떤 과일을 구매하시겠습니까?", "apple");
+let bag = {};
+
+// 변수 fruit을 사용해 프로퍼티 이름을 만들었습니다.
+bag[fruit] = 5;
+
+let fruit = 'apple';
+let bag = {
+  [fruit + 'Computers']: 5 // bag.appleComputers = 5
+};
