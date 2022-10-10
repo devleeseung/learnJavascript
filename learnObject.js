@@ -70,3 +70,22 @@ let fruit = 'apple';
 let bag = {
   [fruit + 'Computers']: 5 // bag.appleComputers = 5
 };
+
+function makeUser(name, age) {
+    return{
+        name: name,
+        age: age,
+        ///...등등 
+    };
+}
+
+let user = makeUser("John", 30);
+alert(user.name); //John
+
+function makeUser(name, age) {
+    return{
+        name,
+        age,
+        ///...등등 
+    };
+}
