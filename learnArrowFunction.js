@@ -33,3 +33,10 @@ let welcome = (age < 18) ?
     () => alert("안녕하세요!");
 
 welcome();
+
+let sum = (a,b) => {
+    let result = a + b;
+    return result;
+};
+
+alert (sum(1,2)); //3
