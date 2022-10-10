@@ -33,3 +33,28 @@ for (let key in user) {
 clone.name = "Pete"; // clone의 데이터를 변경합니다.
 
 alert( user.name ); // 기존 객체에는 여전히 John이 있습니다.
+
+Object.assign(dest, {src1,src2,sr3...})
+
+let user = { name: "John" };
+
+let permissions1 = { canView: true };
+let permissions2 = { canEdit: true };
+
+// permissions1과 permissions2의 프로퍼티를 user로 복사합니다.
+Object.assign(user{permissions1, permissions2});
+
+//now user = {name: "John", canView: true, canEdit: true}
+
+let user = { name: "John" };
+
+Object.assign(user, { name: "Pete "});
+
+alert(user.name); // user = { name: "Pete" }
+
+let user = {
+    name: "John",
+    age : 30
+};
+
+let clone = Object.assign({}, user);
