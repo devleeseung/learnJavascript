@@ -14,3 +14,41 @@ alert(user.age); // 30
 user.isAdmin = true;
 
 delete user.age;
+
+let user = {};
+
+// set
+user["likes birds"] = true;
+
+//get 
+alert(user["likes birds"]); //true
+
+//delete
+delete user["likes birds"];
+
+let key = "likes birds";
+
+//user["likes birds"] = true; 와 같습니다
+user[key] = true;
+
+let user = {
+    name: "john",
+    ahe: 30
+};
+
+let key = prompt("사용자의 어떤 정보를 얻고 싶으신가요?", "name");
+
+//변수로 접근 
+alert(user[key]); // john
+
+//점 표기법르오는 불가능 
+
+let user = {
+    name: "john",
+    age: 30
+};
+
+let key = "name";
+alert(user.key) // undefined
+
+
