@@ -130,4 +130,15 @@ let obj = {
   
   alert( "test" in obj ); // `in`을 사용하면 프로퍼티 유무를 제대로 확인할 수 있습니다(true가 출력됨).
 
+  let user = {
+    name: "John",
+    age: 30,
+    isAdmin: true
+  };
   
+  for (let key in user) {
+    // 키
+    alert( key );  // name, age, isAdmin
+    // 키에 해당하는 값
+    alert( user[key] ); // John, 30, true
+  }
