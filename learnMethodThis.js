@@ -18,3 +18,10 @@ function sayHi() {
   user.sayHi = sayHi;
 
   user.sayHi(); // 안녕하세요!
+
+  // 단축 구문을 사용하니 더 깔끔해 보이네요.
+user = {
+    sayHi() { // "sayHi: function()"과 동일합니다.
+      alert("Hello");
+    }
+  };
