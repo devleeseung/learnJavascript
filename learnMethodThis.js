@@ -25,3 +25,16 @@ user = {
       alert("Hello");
     }
   };
+
+let user = {
+    name: "John",
+    age: 30,
+
+    sayHi(){
+        // 'this'는 '현재 객체'를 나타냅니다
+        alert(this.name);
+    }
+
+};
+
+user.sayHi(); // John
